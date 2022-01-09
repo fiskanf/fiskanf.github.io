@@ -1,0 +1,23 @@
+<textarea id="SOURCE_CODE_EI_TEXTAREA" style="width: -webkit-fill-available; max-width: -webkit-fill-available; min-width: -webkit-fill-available; resize: vertical; min-height: 82vh; max-height: 82vh; border: 1px solid rgb(0, 0, 0); outline: none; background-color: rgb(241, 241, 241); margin: 4px; font-family: monospace; font-weight: 400; font-size: 12px; padding: 5px; color: rgb(0, 0, 0); display: flex;">&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Sistem Informasi Akademik Fakultas Teknik UPM&lt;/title&gt;
+&lt;script&gt;
+function masuk() {
+	var username = document.login.username.value;
+	var password = document.login.password.value;
+	if (username == "admin" &amp;&amp; password == "admin") {
+		window.location.href = "admin/berhasiladmin.html";
+	}
+	else if (username == "kaprodi" &amp;&amp; password == "kaprodi") {
+		window.location.href = "kaprodi/berhasilkaprodi.html";
+	}
+	else if (username == "dosen" &amp;&amp; password == "dosen") {
+		window.location.href = "dosen/berhasildosen.html";
+	}
+	else if (username == "mahasiswa" &amp;&amp; password == "mahasiswa") {
+		window.location.href = "dosen/berhasildosen.html";
+	}
+	else {
+		alert("Maaf, username atau password yang Anda masukkan salah.");
+	}
+}
+&lt;/script&gt;
