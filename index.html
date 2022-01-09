@@ -2,7 +2,16 @@
 <head>
 <title>Sistem Informasi Akademik Fakultas Teknik UPM</title>
 </head>
-<script>
+<link rel="stylesheet" type="text/css" href="gaya.css">
+<body background ="bg.png" text="white">
+<div align="center">
+<img src="logoo.png" width="200" height="200">
+<h1>Sistem Informasi Akademik<br>Fakultas Teknik UPM</h1>
+<table border="1" cellspacing="0">
+<form action="login" method="post">
+<tr><td>Username</td><td><input type="text" name="username"></td></tr>
+<tr><td>Password</td><td><input type="password" name="password"></td></tr>  
+<tr><td></td><td><input type="submit" value="masuk" onclick="masuk()" <script>
 function masuk() {
 	var username = document.login.username.value;
 	var password = document.login.password.value;
@@ -22,17 +31,7 @@ function masuk() {
 		alert("Maaf, username atau password yang Anda masukkan salah.");
 	}
 }
-</script>
-<link rel="stylesheet" type="text/css" href="gaya.css">
-<body background ="bg.png" text="white">
-<div align="center">
-<img src="logoo.png" width="200" height="200">
-<h1>Sistem Informasi Akademik<br>Fakultas Teknik UPM</h1>
-<table border="1" cellspacing="0">
-<form action="login" method="post">
-<tr><td>Username</td><td><input type="text" name="username"></td></tr>
-<tr><td>Password</td><td><input type="password" name="password"></td></tr>  
-<tr><td></td><td><input type="submit" value="masuk" onclick="masuk()"></td></tr>
+</script></td></tr>
 </form>
 </table>
 <br><br><br>Dibuat Oleh Fiska Nurhadianto Firdaus<br>
